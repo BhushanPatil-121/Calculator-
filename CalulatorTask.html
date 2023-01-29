@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Calculator.css">
+</head>
+<body>
+    <div id="outerBody">
+        <div id="innerBody1">
+            <div id="display1" class="display">0</div>
+        </div>
+        <div id="innerBody2">
+            <div class="btn white" onclick="btnc()" onmousedown="btndown1(0)" onmousemove="btnmove1(0)">AC</div>
+            <div class="btn white" onclick="btnpm()" onmousedown="btndown1(1)" onmousemove="btnmove1(1)">+/-</div>
+            <div class="btn white" onclick="btnp()" onmousedown="btndown1(2)" onmousemove="btnmove1(2)">%</div>
+            <div class="btn yellow" onclick="div()">÷</div>
+            <div class="btn" onclick="btn7()" onmousedown="btndown(4)" onmousemove="btnmove(4)">7</div>
+            <div class="btn" onclick="btn8()" onmousedown="btndown(5)" onmousemove="btnmove(5)">8</div>
+            <div class="btn" onclick="btn9()" onmousedown="btndown(6)" onmousemove="btnmove(6)">9</div>
+            <div class="btn yellow" onclick="mul()">×</div>
+            <div class="btn" onclick="btn4()" onmousedown="btndown(8)" onmousemove="btnmove(8)">4</div>
+            <div class="btn" onclick="btn5()" onmousedown="btndown(9)" onmousemove="btnmove(9)">5</div>
+            <div class="btn" onclick="btn6()" onmousedown="btndown(10)" onmousemove="btnmove(10)">6</div>
+            <div class="btn yellow" onclick="sub()">-</div>
+            <div class="btn" onclick="btn1()" onmousedown="btndown(12)" onmousemove="btnmove(12)">1</div>
+            <div class="btn" onclick="btn2()" onmousedown="btndown(13)" onmousemove="btnmove(13)">2</div>
+            <div class="btn" onclick="btn3()" onmousedown="btndown(14)" onmousemove="btnmove(14)">3</div>
+            <div class="btn yellow" onclick="add()">+</div>
+            <div class="btn btn0" onclick="btn0()" onmousedown="btndown(16)" onmousemove="btnmove(16)">0</div>
+            <div class="btn" onclick="btndot()" onmousedown="btndown(17)" onmousemove="btnmove(17)">.</div>
+            <div class="btn yellow" onclick="equal()" onmousedown="equal1()" onmousemove="equal2()">=</div>
+        </div>
+    </div>
+
+    <script src="./Calculator.js"></script>
+</body>
+</html>
